@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aggregator.dashbord.ItemDetailsAggrigator">
+
+
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/item_details_layout_top_bar">
+        </include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_top"
+        android:layout_below="@id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/scroll_top">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/linear_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/parcel_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_marginStart="5dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/photo_size" />
+
+                    <TextView
+                        android:id="@+id/parcel_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/text_padding5"
+                        android:textSize="@dimen/small_text"
+                        android:textColor="@color/text_color_light"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order id:"
+                            android:layout_below="@id/parcel_image"
+                            android:padding="@dimen/text_padding"
+                            android:textColor="@color/text_color_light"
+                            android:layout_marginEnd="5dp"/>
+                        <TextView
+                            android:id="@+id/order_id_aggregator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_below="@id/parcel_image"
+                            android:layout_marginStart="10dp"
+                            android:textStyle="bold"
+                            android:padding="@dimen/text_padding"
+                            android:layout_marginEnd="5dp"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/parcel_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Documents"
+                        android:layout_below="@id/parcel_image"
+                        android:padding="@dimen/text_padding"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_color_light"
+                        android:layout_marginStart="5dp"
+                        android:drawablePadding="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <TextView
+                        android:id="@+id/parcel_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:layout_below="@id/parcel_type"
+                        android:padding="@dimen/text_padding"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:maxLines="2"
+                        android:textSize="13dp"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/parcel_description"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:id="@+id/total_cost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/rupees_symbol"
+                            android:textSize="22dp"
+                            android:textColor="@color/black"
+                            android:padding="@dimen/text_padding"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginStart="5dp"
+                            android:drawablePadding="5dp"
+                            android:layout_marginEnd="5dp" />
+
+                        <Button
+                            android:id="@+id/view_qr_button"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:text="view Qr"
+                            android:layout_marginTop="@dimen/text_padding5"
+                            android:layout_marginBottom="@dimen/text_padding5"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/round_text_background"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey"></View>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/delivery_address_card"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/linear_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notes_for_carrier"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/small_text"
+                        android:background="@color/light_text_background_color"
+                        android:drawableTint="@color/icon_color"
+                        android:drawableStart="@drawable/description"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="3dp"
+                        android:paddingTop="@dimen/text_padding5"
+                        android:paddingBottom="@dimen/text_padding5" />
+
+                    <TextView
+                        android:id="@+id/notes_for_carrier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/carrier_notes"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="@dimen/text_padding"
+                        android:maxLines="2"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey"></View>
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/pickup_with_in_carrier"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:drawableStart="@drawable/time"-->
+<!--                        android:drawablePadding="3dp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/small_text"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginBottom="5dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/pickup_time"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/pickup_with_in"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:padding="@dimen/text_padding"/>-->
+
+<!--                    <View-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="1dp"-->
+<!--                        android:background="@color/grey"></View>-->
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+<!--            set visibility gone-->
+        <LinearLayout
+            android:id="@+id/shop_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pickup_location"
+                android:layout_below="@+id/seller_info_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pickup your parcel from"
+                        android:layout_below="@id/parcel_image"
+                        android:paddingTop="@dimen/text_padding5"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/text_padding5"
+                        android:background="@color/light_text_background_color"
+                        android:textColor="@color/black"
+                        android:drawableStart="@drawable/pin_drop_location"
+                        android:textSize="@dimen/small_text"
+                        android:drawablePadding="3dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/text_padding5"
+                        android:paddingTop="@dimen/text_padding5">
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/rating_wheeler"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="4.5"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:drawableLeft="@drawable/star"-->
+<!--                            android:layout_below="@id/parcel_image"-->
+<!--                            android:padding="@dimen/text_padding"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:background="@drawable/round_text_background"-->
+<!--                            android:paddingStart="8dp"-->
+<!--                            android:paddingEnd="8dp"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:textSize="@dimen/small_text"-->
+<!--                            android:drawablePadding="5dp"-->
+<!--                            android:layout_marginEnd="5dp" />-->
+
+                        <TextView
+                            android:id="@+id/from_shop_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Wheeler Shop name"
+                            android:layout_below="@id/parcel_image"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/text_padding5"
+                            android:layout_marginStart="5dp"
+                            android:textSize="13dp"
+                            android:drawablePadding="5dp" />
+
+<!--                        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                            android:id="@+id/call_pickup_wheeler_btn"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/call"-->
+<!--                            android:tint="@color/white"-->
+<!--                            android:layout_marginEnd="5dp"-->
+<!--                            android:backgroundTint="@color/colorPrimary"-->
+<!--                            android:layout_gravity="end|center"/>-->
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/from_shop_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/parcel_image"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="@dimen/text_padding5"
+                        android:text="Howrah Station,Howrah,Kolkata"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/text_padding5"
+                    android:paddingTop="@dimen/text_padding5">
+
+                    <TextView
+                        android:id="@+id/pickup_location_on_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_below="@id/parcel_image"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:paddingStart="@dimen/text_padding5"
+                        android:padding="@dimen/text_padding"
+                        android:gravity="center"
+                        android:text="Direction"
+                        android:background="@drawable/card_bg"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/mid_text"
+                        android:drawableTint="@color/white"
+                        android:drawableStart="@drawable/directions"
+                        android:drawablePadding="5dp" />
+
+                    <TextView
+                        android:id="@+id/call_pickup_wheeler_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_below="@id/parcel_image"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:paddingStart="10dp"
+                        android:padding="@dimen/text_padding"
+                        android:gravity="center"
+                        android:text="Call"
+                        android:background="@drawable/card_bg"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/mid_text"
+                        android:drawableStart="@drawable/call"
+                        android:drawablePadding="5dp" />
+
+                </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/seller_info_card"
+                android:layout_below="@+id/delivery_address_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/seller_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Drop your parcel at"
+                        android:layout_below="@id/parcel_image"
+                        android:padding="@dimen/text_padding"
+                        android:textColor="@color/black"
+                        android:drawableStart="@drawable/pin_drop_location"
+                        android:background="@color/light_text_background_color"
+                        android:textSize="@dimen/small_text"
+                        android:drawablePadding="3dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/rating_wheeler_drop"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="4.5"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:drawableLeft="@drawable/star"-->
+<!--                            android:layout_below="@id/parcel_image"-->
+<!--                            android:padding="@dimen/text_padding"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:background="@drawable/round_text_background"-->
+<!--                            android:paddingStart="8dp"-->
+<!--                            android:paddingEnd="8dp"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:textSize="@dimen/small_text"-->
+<!--                            android:drawablePadding="5dp"-->
+<!--                            android:layout_marginEnd="5dp" />-->
+
+                        <TextView
+                            android:id="@+id/to_shop_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Wheeler Shop name"
+                            android:layout_below="@id/parcel_image"
+                            android:layout_marginTop="@dimen/text_padding5"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:gravity="start|center"
+                            android:textSize="13dp"
+                            android:drawablePadding="5dp" />
+
+
+<!--                        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                            android:id="@+id/call_drop_wheeler_btn"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/call"-->
+<!--                            android:tint="@color/black"-->
+<!--                            android:layout_marginEnd="5dp"-->
+<!--                            android:backgroundTint="@color/colorPrimary"-->
+<!--                            android:layout_gravity="end"/>-->
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/to_shop_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/parcel_image"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="@dimen/text_padding5"
+                        android:layout_marginBottom="@dimen/text_padding5"
+                        android:text="Howrah Station,Howrah,Kolkata"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_below="@id/parcel_image"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/text_padding5"
+                    android:paddingTop="@dimen/text_padding5">
+
+                <TextView
+                    android:id="@+id/drop_loacation_on_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/parcel_image"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:paddingStart="@dimen/text_padding5"
+                    android:padding="@dimen/text_padding"
+                    android:gravity="center"
+                    android:text="Direction"
+                    android:background="@drawable/card_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mid_text"
+                    android:drawableTint="@color/white"
+                    android:drawableStart="@drawable/directions"
+                    android:drawablePadding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/call_drop_wheeler_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_below="@id/parcel_image"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:paddingStart="10dp"
+                        android:padding="@dimen/text_padding"
+                        android:gravity="center"
+                        android:text="Call"
+                        android:background="@drawable/card_bg"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/mid_text"
+                        android:drawableStart="@drawable/call"
+                        android:drawablePadding="5dp" />
+
+
+                </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/parcel_details"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/delivery_address_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Parcel Details"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/small_text"
+                        android:background="@color/light_text_background_color"
+                        android:drawableTint="@color/icon_color"
+                        android:drawableStart="@drawable/description"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="3dp"
+                        android:paddingTop="@dimen/text_padding5"
+                        android:paddingBottom="@dimen/text_padding5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weight"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="@dimen/text_padding"
+                        android:maxLines="2"/>
+                        <TextView
+                            android:id="@+id/weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="500gm"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="@dimen/text_padding"
+                            android:maxLines="2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/demintion"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="@dimen/text_padding"
+                            android:maxLines="2"/>
+                        <TextView
+                            android:id="@+id/dimention"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="10 x 10x 10 cm"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="@dimen/text_padding"
+                            android:maxLines="2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/type"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="@dimen/text_padding"
+                            android:maxLines="2"/>
+                        <TextView
+                            android:id="@+id/type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text = "Document"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="@dimen/text_padding"
+                            android:maxLines="2"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey"></View>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_below="@+id/parcel_description"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/white"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:elevation="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="5dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Rate Our Service"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/small_text"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:padding="@dimen/text_padding"/>-->
+
+<!--                    <RatingBar-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:numStars="5"-->
+<!--                        android:layout_gravity="center"/>-->
+
+<!--                    <View-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="1dp"-->
+<!--                        android:background="@color/grey"/>-->
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

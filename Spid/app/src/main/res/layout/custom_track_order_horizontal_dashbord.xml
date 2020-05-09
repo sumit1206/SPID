@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="130dp"
+    android:background="@null"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_margin="5dp"
+        app:contentPadding="5dp"
+        android:padding="10dp"
+        android:background="@null"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="@color/light_text_background_color"
+            android:background="@drawable/backround_card"
+            android:orientation="vertical">1
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_track"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:layout_marginTop="@dimen/text_padding5"
+                android:textColor="@color/text_color_light"
+                tools:text="24 JAN"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="@dimen/text_padding5"
+                android:id="@+id/position_track"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:textColor="@android:color/black"
+                tools:text="Order Successfully Completed"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+<!--    <com.github.vipulasri.timelineview.TimelineView-->
+<!--        android:id="@+id/timeline"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        app:markerSize="20dp"-->
+<!--        app:lineWidth="2dp"-->
+<!--        app:startLineColor="@color/colorAccent"-->
+<!--        app:endLineColor="@color/colorAccent"-->
+<!--        app:lineOrientation="horizontal"-->
+<!--        app:lineStyle="normal"/>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/step_number_circle"
+            android:layout_width="@dimen/vertical_stepper_form_width_circle"
+            android:layout_height="@dimen/vertical_stepper_form_width_circle"
+            android:background="@drawable/circle_step_done">
+
+            <ImageView
+                android:id="@+id/step_done_icon"
+                android:layout_width="@dimen/vertical_stepper_form_width_circle"
+                android:layout_height="@dimen/vertical_stepper_form_width_circle"
+                android:padding="2dp"
+                android:background="@drawable/check_circle"
+                android:scaleType="centerInside"
+                tools:visibility="visible"/>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/line_track"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/green_color"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

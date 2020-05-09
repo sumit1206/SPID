@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/action_transaction"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/transaction_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/mid_text"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/text_color_light"
+        android:text="Redirecting to payment gateway..."/>
+
+    <TextView
+        android:id="@+id/try_again_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/mid_text"
+        android:visibility="gone"
+        android:text="Try again"
+        android:textStyle="bold"
+        android:background="@drawable/round_text_background"/>
+
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F2E8"
+    android:orientation="vertical"
+    tools:context=".mydelivery.CancelDelivery">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/app_bar"/>
+    </RelativeLayout>
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+    <LinearLayout
+        android:id="@+id/item_details_layout"
+        android:layout_below="@id/linear_from_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginEnd="@dimen/padding10"
+        android:layout_marginStart="@dimen/padding10"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_padding5"
+            android:layout_margin="@dimen/text_padding5">
+
+            <TextView
+                android:id="@+id/cancel_order_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/small_text"/>
+
+
+            <!--item description-->
+            <TextView
+                android:id="@+id/cancel_tyoe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documents"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/small_text"/>
+
+            <TextView
+                android:id="@+id/cancel_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLength="20"
+                android:textSize="@dimen/twelvetext"
+                android:textColor="@color/text_color_light"
+                android:text="@string/description"/>
+
+                <TextView
+                    android:id="@+id/cancel_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/text_padding"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/large_text" />
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/cancel_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="1dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reason for cancellation"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:paddingTop="@dimen/text_padding5"
+        android:paddingBottom="@dimen/text_padding5"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/mid_text"
+        android:layout_marginStart="@dimen/text_padding5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="@dimen/text_padding5"
+            android:paddingTop="20dp"
+            android:paddingStart="@dimen/padding10"
+            android:paddingRight="@dimen/padding10"
+            android:paddingBottom="20dp"
+            android:layout_marginStart="@dimen/padding10"
+            android:layout_marginEnd="@dimen/padding10"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reason For Cancellation"
+                android:textSize="@dimen/small_text"
+                android:textColor="@color/text_color_light"
+                android:layout_marginTop="@dimen/text_padding5"
+                android:layout_marginEnd="@dimen/text_padding5"
+                android:layout_marginStart="@dimen/text_padding5"/>
+
+            <Spinner
+                android:id="@+id/cancel_reason"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="@dimen/text_padding5"
+                android:background="@drawable/grey_border"
+                android:layout_marginTop="@dimen/padding10"
+                android:layout_marginStart="@dimen/text_padding5"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/text_padding5"
+                android:layout_marginStart="@dimen/text_padding5">
+
+                <EditText
+                    android:id="@+id/cancel_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Comments" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/cancel_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:layout_marginTop="@dimen/padding10"
+                android:background="@drawable/card_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/text_padding5"
+                android:layout_marginEnd="@dimen/text_padding5"
+                android:textSize="@dimen/mid_text"
+                android:layout_marginBottom="@dimen/padding10"/>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/padding10"
+        android:layout_marginEnd="@dimen/padding10"
+        android:layout_marginBottom="@dimen/padding10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refund Status"
+            android:textSize="@dimen/mid_text"
+            android:paddingTop="@dimen/padding10"
+            android:paddingBottom="@dimen/padding10"
+            android:layout_marginStart="@dimen/padding10"
+            android:textColor="@color/text_color_light"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewColor"
+            android:layout_marginTop="@dimen/text_padding5"
+            android:layout_marginStart="@dimen/padding10"
+            android:layout_marginEnd="@dimen/padding10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comment"
+            android:paddingTop="@dimen/padding10"
+            android:paddingBottom="@dimen/padding10"
+            android:textSize="@dimen/small_text"
+            android:layout_marginStart="@dimen/padding10"
+            android:textColor="@color/text_color_light" />
+
+    </LinearLayout>
+    </RelativeLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_marginStart="@dimen/padding10"-->
+<!--        android:layout_marginEnd="@dimen/padding10"-->
+<!--        android:layout_marginBottom="@dimen/padding10">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Continue send Parcel"-->
+<!--            android:textSize="@dimen/mid_text"-->
+<!--            android:paddingTop="@dimen/padding10"-->
+<!--            android:paddingBottom="@dimen/padding10"-->
+<!--            android:layout_marginStart="@dimen/padding10"-->
+<!--            android:textColor="@color/text_color_light"/>-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="@color/viewColor"-->
+<!--            android:layout_marginStart="@dimen/padding10"-->
+<!--            android:layout_marginEnd="@dimen/padding10"-->
+<!--            android:layout_marginTop="@dimen/text_padding5" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="View All Deliveries"-->
+<!--            android:paddingTop="@dimen/padding10"-->
+<!--            android:paddingBottom="@dimen/padding10"-->
+<!--            android:textSize="@dimen/mid_text"-->
+<!--            android:layout_marginStart="@dimen/padding10"-->
+<!--            android:textColor="@color/text_color_light" />-->
+<!--    </LinearLayout>-->
+        </LinearLayout>
+<!--    </ScrollView>-->
+<!--</LinearLayout>-->

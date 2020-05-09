@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/account_circle"
+            android:iconTint="@color/icon_color"
+            android:title="@string/profile_top" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/wallet"
+            android:iconTint="@color/icon_color"
+            android:title="@string/my_wallet" />
+<!--        <item-->
+<!--            android:id="@+id/nav_earning"-->
+<!--            android:icon="@drawable/stars"-->
+<!--            android:iconTint="@color/icon_color"-->
+<!--            android:title="@string/my_earning" />-->
+
+<!--        will be added-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_history"-->
+<!--            android:icon="@drawable/history"-->
+<!--            android:title="Transaction" />-->
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:iconTint="@color/icon_color"
+                android:title="@string/share" />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:iconTint="@color/icon_color"
+                android:title="@string/contact_company" />
+
+            <item
+                android:id="@+id/nav_report"
+                android:icon="@drawable/bug_report"
+                android:title="@string/report_bug" />
+
+        </menu>
+    </item>
+    <item
+        android:title="About">
+        <menu>
+            <item
+                android:id="@+id/legal"
+                android:title="@string/legal"/>
+            <item
+                android:id="@+id/privacy"
+                android:title="@string/privacy"/>
+
+        </menu>
+
+    </item>
+    <item
+        android:title="Logout">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/logout" />
+        </menu>
+
+    </item>
+
+
+</menu>

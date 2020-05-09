@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/image_bell"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#C2C0C0"
+            android:background="@drawable/tag_faces"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/remoteUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wheeler Store Name"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/callState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ringing"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"/>
+
+                    <TextView
+                            android:id="@+id/callDuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="4dp"
+                            android:text="00:00"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"/>
+
+        </LinearLayout>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/hangupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red_color"
+                android:src="@drawable/call"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="90dp"
+                android:tint="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_gravity="bottom">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D0CECE"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your number stays private"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/large_text"
+                    android:layout_marginStart="5dp"
+                    android:drawableStart="@drawable/security"
+                    android:drawablePadding="10dp"
+                    android:layout_gravity="center"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_marginTop="5dp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/security_description"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/small_text"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    ></TextView>
+
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</RelativeLayout>

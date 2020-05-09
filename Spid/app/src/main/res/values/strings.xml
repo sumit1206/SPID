@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">SPID</string>
+    <string name="splash_name">Spid</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_with_bullet">\u2022</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">About</string>
+    <string name="help">Help</string>
+    <string name="suggest_features">Suggest Features</string>
+    <string name="carry_parcel">Want to carry packet?</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="no_notification">Oops! You Don\'t have any notification</string>
+    <string name="no_delivery">Oops! Currently you don\'t have any deliveries </string>
+    <string name="home_error">Oops! Network Error</string>
+    <string name="swipe_down">Swipe down to refresh page</string>
+    <string name="send_parcel">Continue Send Parcel</string>
+    <string name="where">Where to ?</string>
+
+    <!--activity my delivery-->
+    <string name="my_delivery_deatils_top">My delivery details</string>
+    <string name="rupees_symbol"> \u20B9</string>
+
+    <string name="amount_rupees_symbol"> \u20B9 Amount</string>
+
+
+    <string name="phone_no">Phone no :</string>
+    <string name="country_code">+91</string>
+    <string name="shipping_price">Shipping :</string>
+    <string name="insurance_price">Insurance :</string>
+    <string name="total">Total Price:</string>
+
+
+    <!--content main credentials-->
+
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="my_deliveries">My Deliveries</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="company_name">Powered by: Redmango Analytics</string>
+
+    <string name="address">Kala Pather Rd, Niti Khand I, Indirapuram, Ghaziabad, Uttar Pradesh 201014</string>
+    <string name="delivery_address"> Delivered to Kala Pather Rd, Niti Khand I, Indirapuram, Ghaziabad, Uttar Pradesh 201014</string>
+    <string name="delivery_by"> Delivered with in </string>
+    <string name="delivery_to"> Delivered to </string>
+    <string name="delivery_with_in"> 30 hrs</string>
+
+
+    <!--navigation credentials-->
+
+    <string name="my_wallet">Wallet</string>
+    <string name="report_bug">Report bug</string>
+    <string name="about">About</string>
+    <string name="history">History</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">Logout</string>
+    <string name="my_rating">My Rating</string>
+    <string name="my_earning">My Earning</string>
+    <string name="review">My Review</string>
+    <string name="legal">Legal</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="settings">Settings</string>
+
+    <string name="insurance_opt">Opt for Insurance?</string>
+
+
+    <!--    cookies attribute-->
+
+    <string name="attributeCookiesPhoto">Photo</string>
+    <string name="attributeCookiesName">Name</string>
+    <string name="attributeCookiesCarrierStatus">Carrier_status</string>
+    <string name="attributeCookiesMobileNo">Mobile No</string>
+    <string name="attributeCookiesEmailId">Email id</string>
+    <string name="attributeCookiesAddress">Address</string>
+    <string name="attributeCookiesCity">City</string>
+    <string name="attributeCookiesState">State</string>
+    <string name="attributeCookiesAadharNumber">Aadhar number</string>
+    <string name="rate_service">Rate our service</string>
+    <string name="parcel_details">Parcel details</string>
+    <string name="weight">Weight</string>
+    <string name="dimension">Dimension</string>
+    <string name="type">Type</string>
+    <string name="description">Definition of item. (Entry 1 of 3) 1 : a distinct part in an enumeration, account, or series</string>
+    <string name="search_query_hint">Search pincode or city</string>
+    <string name="track_parcel">Track parcel</string>
+    <string name="error">Error occurs</string>
+    <string name="no_notification_text">Oop\'s ! you don\'t have any notification</string>
+    <string name="action_text_notification">Return to home page</string>
+    <string name="internet_connection_error">Oop\'s ! slow or no internet connection \n check internet connection</string>
+    <string name="action_text_no_internet">Try again</string>
+    <string name="action_text_deliveries">Send parcel</string>
+    <string name="no_deliveries_text">Oop\'s !  currently you don\'t have any delivery</string>
+    <string name="my_delivery_details">My delivery details</string>
+    <string name="contact_us">Contact us</string>
+    <string name="under_development">This feature is coming soon</string>
+    <string name="vertical_stepper_form_continue_button">Continue</string>
+    <string name="vertical_stepper_form_cancel_button">Cancel</string>
+    <string name="invite"><![CDATA[Tell your friends & earn]]></string>
+    <string name="transaction">Transaction</string>
+    <string name="debited_from">Debited from</string>
+    <string name="transaction_id">Transaction id :</string>
+    <string name="terms"><![CDATA[View T&C]]></string>
+    <string name="discount">Discount</string>
+    <string name="sid_back"><![CDATA[Sit back & relax]]></string>
+    <string name="faq_question">Have a question? </string>
+    <string name="questio_one">How to avail our service ?</string>
+    <string name="answer_one">just search your destination we will stand to serve you</string>
+    <string name="questio_two">how can i pay for my parcel delivery?</string>
+    <string name="answer_two">open your parcel details form my delivery ,you will be get a pay now option there.</string>
+    <string name="questio_three">What is maximum weight of a package that i can send?</string>
+
+    <!--    sinch-->
+    <string name="sinch_incoming_call">Incoming call from %1$s</string>
+    <string name="select_type">Select type</string>
+    <string name="what_in_it">What\'s in it ?</string>
+    <string name="security_description">We use technology to hide your number \n if you call through our app.</string>
+    <string name="generate_otp">Tips: \n 1.This generated Otp is sent to your parcel receiver via sms in the number you provided while booking. \n 2.You can also share the OTP by clicking the share button. \n 3.This OTP must be provided before collecting parcel.</string>
+    <string name="change_receiver_number">Tips : \n 1. this number will be use for verification of receiver while handing over parcel.\n 2. An OTP will be sent to this number for verification purpose.\n 3. Generate the OTP from the \'GENERATE OTP\'  button provided.</string>
+    <string name="faq_question_tips">Tips : \n 1.Be specific , ask question about the service not about other. \n 2. Ask for infromation which is not captured in the description.</string>
+    <string name="no_carrier">Sorry! no carrier available in this location.</string>
+    <string name="action_text_no_carrier">Try for another location</string>
+
+    //Push Notification
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="enter_order_id">Enter order id..</string>
+    <string name="no_transaction">No transaction</string>
+
+
+    <!--    faq question-->
+    <string name="question_four">What is the maximum size of a package that i can send?</string>
+    <string name="questio_four">What is the maximum weight of a package that is can send?</string>
+    <string name="answer_four">Right now you can send maximum 1kg ,we are working hard to give you flexibility of sending more weights.</string>
+    <string name="questio_five">Do you deliver door to door ?</string>
+    <string name="answer_five">No, right now  we  deliver your parcel to your nearest store,you have to collect your parcel from our \'SPID STORE\'</string>
+    <string name="questio_six">Can I track my parcel?</string>
+    <string name="answer_six">Yes, you can track track your parcel in real time.</string>
+    <string name="questio_seven">Is the app mandetory for Receiver ?</string>
+    <string name="answer_seven">No, app is not mandatory for receiver side. you have to generate a <b>OTP</b> form <b> My delivery details </b> and share otp to receiver, <b>-></b> receiver can received parcel by giving  <b>OTP</b> to store</string>
+    <string name="question"><b>Q.</b></string>
+    <string name="answer"><b>A.</b></string>
+    <string name="no_history_text">Oop\'s ! you dont have any history.</string>
+    <!--    <string name="answer_seven">No, app is not mandatory for receiver side.</string>-->
+
+
+<!--     contact -->
+    <string name="contact_page">Feel free to drop us a message !</string>
+    <string name="message">Message</string>
+    <string name="name">Name</string>
+    <string name="postal_address"><![CDATA[Want to reach us the old style ?]]></string>
+    <string name="postal_address_next">Here\'s our <font color='#FF8D00'>postal address</font></string>
+    <string name="postal_address_delhi">DELHI\n 3rd Floor, Plot No. 37, Sector - 14\n Kausambi, Gazaibad, Uttar Pradesh-201010. \n MUMBAI \n 1502,Ambience Court,Plot NO. 2, Sector - 19D,\n
+    Opp.Vashi RTO Office,Vashi,Navi Mumbai- 4007703</string>
+    <string name="comment">You will get the refund money with in 24 hrs.</string>
+    <string name="need_help">Need help?</string>
+
+</resources>

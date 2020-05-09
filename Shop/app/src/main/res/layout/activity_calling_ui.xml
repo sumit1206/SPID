@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallingUi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wheeler Store Name"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ringing"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mid_text"/>
+        </LinearLayout>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/image_bell"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="centerCrop"/>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/callEndButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/red_color"
+                        android:src="@drawable/call"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="90dp"
+                        android:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimary"
+                    android:layout_gravity="bottom">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your number stays private"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text"
+                        android:layout_marginStart="10dp"
+                        android:drawableStart="@drawable/security"
+                        android:drawablePadding="10dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginTop="5dp"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/security_description"
+                        android:layout_marginEnd="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_text"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        ></TextView>
+
+                </LinearLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</RelativeLayout>

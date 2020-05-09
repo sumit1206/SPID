@@ -1,0 +1,131 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="2dp">
+
+
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:gravity="center"
+        android:background="#F0EFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="50dp"
+            android:text="Simple Title Text "
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/item_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp">
+
+            <LinearLayout
+                android:id="@+id/linear_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parcel_id"
+                    android:padding="2dp"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:id="@+id/parcel_id_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#12345"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color_light"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="2dp"
+                    android:textSize="@dimen/mid_text"/>
+            </LinearLayout>
+
+
+            <!--item description-->
+            <TextView
+                android:id="@+id/parcel_type_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documents"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/small_text"/>
+
+            <TextView
+                android:id="@+id/item_description_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLength="20"
+                android:textSize="@dimen/twelvetext"
+                android:textColor="@color/text_color_light"
+                android:text="@string/description"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="1dp">
+
+                <TextView
+                    android:id="@+id/time_stamp_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12 sep,19"
+                    android:gravity="end"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/small_text"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/parcel_image_stock"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/parcel_box"
+        app:layout_constraintEnd_toStartOf="@+id/container"
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

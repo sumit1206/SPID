@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/otp_toolbar"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    android:theme="@style/AppTheme.PopupOverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate OTP"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mid_text"
+            android:padding="@dimen/text_padding"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/otp_share_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/white"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/text_padding5"
+            android:paddingEnd="@dimen/padding10"
+            android:background="@drawable/ic_menu_share"/>
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

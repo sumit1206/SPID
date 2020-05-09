@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/card_search_result"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:elevation="10dp"
+    android:layout_margin="@dimen/text_padding5"
+    android:background="@null"
+    app:cardCornerRadius="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:elevation="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/delivery_gif"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@color/light_text_background_color"
+        android:layout_gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="@dimen/text_padding5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:padding="@dimen/text_padding"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivered by :"
+        android:gravity="start|center"
+        android:drawableStart="@drawable/time"
+        android:drawableTint="@color/text_color_light"
+        android:drawablePadding="5dp"
+        android:textSize="@dimen/twelvetext"
+        android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/delivery_time_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00hr"
+            android:layout_marginStart="3dp"
+            android:gravity="start|center"
+            android:textSize="@dimen/twelvetext"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:padding="@dimen/text_padding"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/store_black"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/text_color_light"
+                android:gravity="start|center"
+                android:text="If you drop within :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelvetext" />
+
+
+            <TextView
+            android:id="@+id/drop_time_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:textSize="@dimen/twelvetext"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/indicator_image"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_front"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@color/secondaryLightColor"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

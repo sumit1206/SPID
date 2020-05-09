@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/faq_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/text_padding5"
+    android:elevation="@dimen/padding10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/faqQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text"
+            android:text="Q: What is your question?"
+            android:textColor="@color/text_color_light"
+            android:gravity="start|center"
+            android:layout_marginStart="@dimen/text_padding5"
+            android:padding="@dimen/text_padding"/>
+
+        <TextView
+            android:id="@+id/faqAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twelvetext"
+            android:text="A: your answer"
+            android:layout_marginStart="@dimen/text_padding5"
+            android:gravity="start|center"
+            android:textColor="@color/text_color_light"
+            android:layout_marginTop="@dimen/text_padding5"
+            android:padding="@dimen/text_padding"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/text_padding5"
+            android:layout_marginEnd="@dimen/text_padding5">
+
+            <TextView
+                android:id="@+id/faqConsumer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_text"
+                android:text="name"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/text_padding5"
+                android:gravity="start|center"
+                android:textColor="#8D8C8C"
+                android:layout_marginTop="@dimen/text_padding5"
+                android:layout_marginBottom="@dimen/text_padding5"
+                android:padding="@dimen/text_padding"/>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginStart="@dimen/padding10">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/faq_like_btn"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/thumb_up"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:backgroundTint="@color/grey"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/faqLikeCount"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="100"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginEnd="8dp"/>-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/faq_unlike_btn"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/thumb_down"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:backgroundTint="@color/grey" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/faqUnlikeCount"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="100"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginEnd="8dp"/>-->
+
+<!--            </LinearLayout>-->
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewColor"/>
+    </LinearLayout>
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/viewColor"/>-->
+</androidx.cardview.widget.CardView>

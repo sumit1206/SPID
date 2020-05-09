@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    android:theme="@style/AppTheme.PopupOverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm booking"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="@dimen/mid_text"
+            android:padding="@dimen/text_padding"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rupees_symbol"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/text_padding5"
+            android:textSize="@dimen/mid_text"
+            android:padding="@dimen/text_padding"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/parcel_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:textColor="@color/white"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/text_padding5"
+            android:textSize="@dimen/mid_text"
+            android:padding="@dimen/text_padding"
+            android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

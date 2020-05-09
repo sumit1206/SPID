@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_name_text_size">35sp</dimen>
+    <dimen name="login_text_size">25sp</dimen>
+    <dimen name="small_text_size">20sp</dimen>
+    <dimen name="small_text">15sp</dimen>
+    <dimen name="mid_text">18sp</dimen>
+    <dimen name="drawable_padding">10dp</dimen>
+
+    //tab layout
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+        <dimen name="nav_header_vertical_spacing">8dp</dimen>
+        <dimen name="nav_header_height">176dp</dimen>
+        <dimen name="text_padding">2dp</dimen>
+        <dimen name="text_size">15dp</dimen>
+        <dimen name="large_text">20dp</dimen>
+        <dimen name="card_radius">5dp</dimen>
+
+<!--profile credentials-->
+    <dimen name="app_bar_height">180dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+
+    <dimen name="elevation_low">9dp</dimen>
+    <dimen name="elevation_high">12dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="twelvetext">12dp</dimen>
+    <dimen name="text_padding5">5dp</dimen>
+</resources>

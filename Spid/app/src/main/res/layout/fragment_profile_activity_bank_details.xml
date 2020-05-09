@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.ProfileActivityBankDetailsFragment">
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/bank_details_recycler_view"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:background="@color/white"-->
+<!--        android:focusableInTouchMode="true"-->
+<!--        android:scrollbars="none"-->
+<!--        android:padding="5dp"-->
+<!--        tools:listitem="@layout/custom_profile_details_card"-->
+<!--        tools:itemCount="5"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/account_balance"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/grey"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This feature is coming soon "
+        android:gravity="center"
+        android:textSize="@dimen/small_text"
+        android:layout_marginTop="@dimen/text_padding5"
+        android:layout_gravity="center"/>
+    </LinearLayout>
+</FrameLayout>

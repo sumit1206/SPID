@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".explorestores.ExploreStores">
+
+    <RelativeLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/top_bar"
+        android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/app_bar"/>
+    </RelativeLayout>
+
+        <!-- AppBar Layout   -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_below="@id/top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <!-- Tab Layout for creating tabs -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:clipToPadding="false"
+                android:background="@color/white">
+                <View
+                    android:id="@+id/indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/card_bg"/>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/store_tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/icon_color"
+                    app:tabIndicatorColor="@null"
+                    app:tabRippleColor="@null"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:background="@color/white"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/appBarLayout"
+                android:layout_marginEnd="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp">
+
+                    <EditText
+                        android:id="@+id/search_pincode_or_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="start|center"
+                        android:background="@drawable/search_font_layout"
+                        android:drawableStart="@drawable/search"
+                        android:drawablePadding="5dp"
+                        android:inputType="textPostalAddress"
+                        android:drawableTint="@color/grey"
+                        android:hint="@string/search_query_hint" />
+
+                    <TextView
+                        android:id="@+id/nearest_search_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Search"
+                        android:gravity="center"
+                        android:background="@drawable/search_button"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/mid_text"
+                        />
+                </LinearLayout>
+            </FrameLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <!-- Helps handing the Fragments for each Tab -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/store_viewPager"
+            android:layout_below="@id/appBarLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

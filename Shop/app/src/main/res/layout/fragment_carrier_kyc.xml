@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aggregator.profile.KycFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="This features coming soon"
+        android:textSize="@dimen/small_text"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/continue_send_parcel_kyc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:background="@drawable/accept_button"
+        android:textColor="@color/white"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+</FrameLayout>

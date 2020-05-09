@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/coordinatorLayout"
+android:layout_width="fill_parent"
+    android:orientation="vertical"
+android:layout_height="fill_parent">
+
+<!-- AppBar Layout   -->
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appBarLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tab_background"
+    android:layout_marginTop="5dp">
+    <!-- Tab Layout for creating tabs -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clipToPadding="false"
+        android:background="@color/tab_background">
+
+        <View
+            android:id="@+id/indicator"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@drawable/gradient_bg"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabIndicatorColor="@null"
+            app:tabRippleColor="@null"/>
+    </FrameLayout>
+</com.google.android.material.appbar.AppBarLayout>
+
+<!-- Helps handing the Fragments for each Tab -->
+<androidx.viewpager.widget.ViewPager
+    android:id="@+id/viewPager"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

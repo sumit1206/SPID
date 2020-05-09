@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/splashLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".splash.SplashScreen">
+
+
+    <ImageView
+        android:id="@+id/cloud1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/cloud1"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cloud1"/>
+
+
+    <TextView
+        android:id="@+id/appNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/daniela_regular"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="@string/app_name"
+        android:textColor="@color/icon_color"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:id="@+id/upper"
+        android:gravity="center">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/relative"-->
+<!--        android:orientation="vertical">-->
+
+        <!--    </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/company_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:padding="2dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:background="#00000000"-->
+<!--            android:text="@string/company_name"-->
+<!--            android:textSize="@dimen/small_text"/>-->
+
+
+
+        <ImageView
+            android:id="@+id/splash_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    android:theme="@style/AppTheme.PopupOverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Profile"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/mid_text"-->
+<!--            android:padding="@dimen/text_padding"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--    </LinearLayout>-->
+</androidx.appcompat.widget.Toolbar>

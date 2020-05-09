@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+    tools:context=".store.more.MoreFragment">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+       >
+
+
+<!--app bar layout-->
+
+    <RelativeLayout
+        android:id="@+id/more_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/search_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:text="@string/more_app_bar"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="@dimen/mid_text" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:layout_below="@id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <RelativeLayout
+             android:id="@+id/top_section"
+             android:layout_below="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/hand_over_via_otp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/hand_over_otp"-->
+        <!--android:textSize="25dp"-->
+        <!--android:padding="2dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:textColor="@color/text_color"-->
+        <!--android:layout_marginLeft="2dp"/>-->
+    <!---->
+    <!--<TextView-->
+        <!--android:id="@+id/logout_btn"-->
+        <!--android:layout_below="@id/hand_over_via_otp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Logout"-->
+        <!--android:textSize="25dp"-->
+        <!--android:padding="2dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:textColor="@color/text_color"-->
+        <!--android:layout_marginLeft="2dp"/>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="20dp"
+        android:id="@+id/card_view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:background="@drawable/profile_background"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_gravity="bottom"/>
+    </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/middle"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/card_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accept_parcel"
+                    android:drawablePadding="15dp"
+                    android:paddingStart="10dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/power"
+                    android:textSize="@dimen/mid_text"/>
+
+                <Switch
+                    android:id="@+id/is_open_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="right"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/view_profile_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mid_text"
+                android:text="Profile"
+                android:textColor="@color/text_color_light"
+                android:drawableStart="@drawable/account_circle"
+                android:paddingStart="10dp"
+                android:drawablePadding="15dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/my_Wallets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mid_text"
+                android:text="My Wallet"
+                android:textColor="@color/text_color_light"
+                android:drawableStart="@drawable/account_balance_wallet"
+                android:paddingStart="10dp"
+                android:drawablePadding="15dp"
+                android:padding="10dp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/my_history"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="@dimen/mid_text"-->
+<!--                android:text="Transactions"-->
+<!--                android:textColor="@color/text_color_light"-->
+<!--                android:drawableStart="@drawable/history"-->
+<!--                android:paddingStart="10dp"-->
+<!--                android:drawablePadding="15dp"-->
+<!--                android:padding="10dp" />-->
+
+
+            <TextView
+                android:id="@+id/contact_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mid_text"
+                android:text="@string/contact_company"
+                android:drawableStart="@drawable/conatct_company"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_color_light"
+                android:drawablePadding="15dp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mid_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/middle">
+
+            <TextView
+                android:id="@+id/report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mid_text"
+                android:text="Report Bug"
+                android:drawableStart="@drawable/bug_report"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_color_light"
+                android:drawablePadding="15dp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mid_section">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/help"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="@dimen/mid_text"-->
+<!--                android:text="Help Center"-->
+<!--                android:textColor="@color/text_color_light"-->
+<!--                android:paddingStart="10dp"-->
+<!--                android:drawablePadding="15dp"-->
+<!--                android:padding="10dp" />-->
+
+            <TextView
+                android:id="@+id/legal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mid_text"
+                android:text="Legal"
+                android:textColor="@color/text_color_light"
+                android:paddingStart="10dp"
+                android:drawablePadding="15dp"
+                android:padding="10dp" />
+            <!--<TextView-->
+                <!--android:id="@+id/privacy_control"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/mid_text"-->
+                <!--android:text="Privacy Controls"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:paddingStart="10dp"-->
+                <!--android:drawablePadding="15dp"-->
+                <!--android:padding="10dp" />-->
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mid_text"
+                android:text="Terms and Conditions"
+                android:textColor="@color/text_color_light"
+                android:paddingStart="10dp"
+                android:drawablePadding="15dp"
+                android:padding="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:id="@+id/store_logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textColor="@color/text_color_light"
+                android:paddingStart="10dp"
+                android:padding="10dp"
+                android:drawableStart="@drawable/logout"
+                android:textSize="@dimen/mid_text"
+                android:drawablePadding="15dp"
+                />
+
+
+        </LinearLayout>
+        </RelativeLayout>
+        </ScrollView>>
+    </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

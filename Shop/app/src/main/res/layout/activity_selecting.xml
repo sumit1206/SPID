@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectingActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login as"
+        android:gravity="center"
+        android:textSize="@dimen/mid_text"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal">
+     <LinearLayout
+         android:id="@+id/aggregator_select"
+         android:orientation="vertical"
+         android:layout_width="120dp"
+         android:layout_height="150dp"
+         android:layout_marginStart="5dp"
+         android:layout_marginEnd="15dp"
+         android:onClick="aggregatorClick">
+
+    <ImageView
+        android:id="@+id/aggregator"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:src="@drawable/loader"
+        android:background="@drawable/grey_border"/>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="Aggregator"
+             android:background="@color/secondaryColor"
+             android:paddingStart="5dp"
+             android:paddingEnd="5dp"
+             android:fontFamily="@font/aargh"
+             android:textColor="@color/black"
+             android:textStyle="bold" />
+     </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/store_select"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:onClick="storeClick">
+            <ImageView
+                android:id="@+id/store"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:padding="@dimen/small_text"
+                android:src="@drawable/store"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Store captain"
+                android:gravity="center"
+                android:fontFamily="@font/aargh"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:background="@color/secondaryLightColor"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

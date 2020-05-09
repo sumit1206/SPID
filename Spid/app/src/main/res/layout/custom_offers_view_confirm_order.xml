@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/offer_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/offer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/text_padding5">
+            <TextView
+                android:id="@+id/offer_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cashback upto 20%"
+                android:padding="5dp"
+                android:paddingStart="@dimen/padding10"
+                android:textSize="@dimen/mid_text"
+                android:textColor="@color/text_color_light"
+                android:textStyle="bold"/>
+             <TextView
+                android:id="@+id/promo_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Promocode : SPID1ST"
+                android:textSize="@dimen/twelvetext"
+                android:paddingStart="@dimen/padding10"
+                android:paddingEnd="10dp"
+                android:textColor="@color/text_color_light" />
+
+            <TextView
+                android:id="@+id/offer_details_confirm_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Offer details"
+                android:padding="@dimen/text_padding5"
+                android:paddingStart="@dimen/padding10"
+                android:textSize="@dimen/twelvetext"
+                android:textColor="@color/text_color_light" />
+
+            <TextView
+                android:id="@+id/terms_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms"
+                android:gravity="end"
+                android:paddingEnd="@dimen/padding10"
+                android:textSize="@dimen/small_text"
+                android:layout_marginEnd="@dimen/padding10"
+                android:paddingBottom="@dimen/text_padding5"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingBottom="3dp"
+                android:background="@color/grey"/>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

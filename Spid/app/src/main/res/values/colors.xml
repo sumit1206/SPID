@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF8D00</color>
+    <color name="colorPrimaryDark">#FF8102</color>
+    <color name="colorAccent">#FFCC99</color>
+    <color name="card_bg_color">#E7E7E7</color>
+
+    <color name="secondaryColor">#fbc02d</color>
+    <color name="secondaryLightColor">#FFCC99</color>
+    <color name="secondaryDarkColor">#c49000</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#000000</color>
+
+<!--    home page color-->
+    <color name="tab_color">#032C41</color>
+    <color name="home_text_color">#294052</color>
+    <color name="text_color_light">#393838</color>
+
+
+    <!-- colors for button style -->
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
+    <!-- colors for tab and screent text -->
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+
+    <color name="text_color">#2962FF</color>
+    <color name="login_text_color">#FF9100</color>
+    <color name="login_button_color">#A8F3F3</color>
+    <color name="appbar_color">#269CF8</color>
+    <color name="yellow">#FFC107</color>
+    <color name="bottom_navigation_view_color">#ffee58</color>
+    <color name="not_selected_view_color">@color/white</color>
+    <color name="grey">#bfbfbf</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="link_blue">#4d94ff</color>
+    <color name="hint_colour">#080400</color>
+    <color name="button_text_colour">#ce7e33</color>
+    <color name="button_colour">#fab074</color>
+    <color name="bgBottomNavigation">#25FFB6</color>
+    <color name="text_color_details">#000</color>
+    <color name="profile_top_layout">#3A7DF8</color>
+    <color name="profile_text_button_colour">#2670E9</color>
+    <color name="red_color">#FF1212</color>
+    <color name="green_color">#128C1F</color>
+    <color name="orange">#FF9800</color>
+    <color name="blue">#0377F4</color>
+    <color name="transparent">#00000000</color>
+    <!--<color name="icon_color">#34e7e4</color>-->
+    <color name="icon_color">#FF8A36</color>
+    <color name="status">#FFBB64</color>
+    <color name="carry_icon_color">#d84315</color>
+
+
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="cyan_50">#E0F7FA</color>
+    <color name="amber_50">#FFF8E1</color>
+    <color name="purple_50">#F3E5F5</color>
+
+    <!--Indigo 500-->
+    <color name="primary_500">#3F51B5</color>
+    <!--Indigo 700-->
+    <color name="primary_700">#303F9F</color>
+    <!--Pink 500-->
+    <color name="accent_500">#E91E63</color>
+    <!--Pink 700-->
+    <color name="accent_700">#C2185B</color>
+    <color name="black_trans80">#33000000</color>
+    <color name="indicator_unselected">#4D000000</color>
+
+    <color name="light_text_background_color">#F0F0F0</color>
+    <color name="viewColor">#E7E7E7</color>
+    <color name="text_heading_color">#585757</color>
+
+    <!--sinch-->
+    <color name="sinch_purple">#ff63029d</color>
+    <color name="off_white">#fffafafa</color>
+    <color name="greyish">#fff2f1f2</color>
+
+</resources>

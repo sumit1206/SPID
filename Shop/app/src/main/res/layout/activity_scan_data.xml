@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".store.scanfunctionality.ScanData">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/app_bar_main"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extra Data"
+        android:id="@+id/show_extra"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Station Name"-->
+<!--        android:layout_below="@id/show_adi"-->
+<!--        android:id="@+id/stn_view"-->
+<!--        android:textSize="20sp"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="10dp"/>-->
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/show_extra"
+        android:onClick="confrmClk"
+        android:padding="10dp"
+        android:text="Done" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">spid pegions</string>
+    <string name="title_transaction">Transaction</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="scan_text">Scan</string>
+    <string name="more_options">More</string>
+    <string name="company_name">Developed By: redMango Analytics</string>
+    <string name="todo">TODO</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    //Login Credentials
+    <string name="login">Login As</string>
+    <string name="sign_up_text">Don\'t have an account?</string>
+    <string name="signUp">Sign up</string>
+    <string name="officeMailId">Enter Your Phone No</string>
+    <string name="loginPassword">Enter Your Password</string>
+    <string name="loginText">Login</string>
+    <string name="loginForgotPass">Forgot Password?</string>
+
+    //Registration Credentials
+    <string name="registerMail">Enter Your Email Id</string>
+    <string name="registerPass">Enter a Password</string>
+    <string name="registerConfPass">Reenter Password</string>
+    <string name="registerName">Enter Your Name</string>
+    <string name="registerPhoneNO">Enter Your Phone No</string>
+    <string name="registerBtn">Register</string>
+    <string name="registerAge">Enter Your Age</string>
+    <string name="registerAddress">Enter Your Address</string>
+    <string name="registerCity">Enter Your City</string>
+    <string name="registerState">Enter Your State</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="parcel_you_may_received">Parcel You May Recived</string>
+    <string name="my_store">My Store</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="parcel_id">Order id:</string>
+    <string name="expected_time">Expected Pick Up Time:</string>
+    <string name="more_app_bar">More</string>
+    <string name="hand_over_otp">Hand Over via OTP</string>
+    <string name="hand_over_otp_bar">Hand over via OTP</string>
+
+    <string name="view_profile">View Full Profile</string>
+    <string name="contact_company">Contact Us</string>
+    <string name="profile_top">Profile</string>
+    <string name="edit">EDIT</string>
+    <string name="owner">Owner Name</string>
+    <string name="accept_parcel">Accept Parcel</string>
+    <string name="document_details">Document Details</string>
+    <string name="aadhar_no">Aadhaar No</string>
+    <string name="pan_no">PAN No</string>
+    <string name="gst_no">GST No</string>
+    <string name="edit_profile">Edit Your Profile</string>
+    <string name="update_profile">Save</string>
+
+    <string name="text_with_bullet">\u2022</string>
+    <string name="rupees_symbol"> \u20B9</string>
+
+
+    <string name="address">Kala Pather Rd, Niti Khand I, Indirapuram, Ghaziabad, Uttar Pradesh 201014</string>
+    <string name="carrier_notes">Please take care of my documents</string>
+    <string name="notes_for_carrier"> Notes for you </string>
+    <string name="pickup_with_in_carrier"> Pickup with in </string>
+    <string name="pickup_with_in"> 8:00 pm</string>
+
+
+    <!--Registration Credentials-->
+
+    <string name="shop_name">Shop name</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="email">Email Address</string>
+    <string name="phone">Phone no</string>
+    <string name="station_name">Station name</string>
+    <string name="platform_no">Platform no</string>
+    <string name="aadhar_no_reg">Aadhar No</string>
+    <string name="pan_no_reg">Pan no</string>
+    <string name="agree_terms">I agree to the Terms &amp; Conditions</string>
+    <string name="terms_conditions">See T&amp;C</string>
+    <string name="add_shop_image">Shop Image</string>
+    <string name="add_owner_image">Owner Image</string>
+    <string name="add_aadhar_image">Aadhar Image</string>
+    <string name="add_pan_image">Pan Image</string>
+    <string name="title_activity_main_aggrigator">MainAggrigator</string>
+
+    <string name="my_wallet">Wallet</string>
+    <string name="report_bug">Report bug</string>
+    <string name="about">About</string>
+    <string name="history">History</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">Logout</string>
+    <string name="my_rating">My Rating</string>
+    <string name="my_earning">My Earning</string>
+    <string name="review">My Review</string>
+    <string name="share">Share</string>
+    <string name="help">Help</string>
+    <string name="legal">Legal</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="settings">Settings</string>
+
+    <string name="new_message_notification_title_template">New message: %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="new_message_notification_placeholder_text_template">You said %1$s and lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit vel
+        semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
+        Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper
+        ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
+        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
+        tortor.
+    </string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+    <string name="security_description">We use technology to hide your number if you call through our app.</string>
+    <string name="parcel_details">Parcel details</string>
+    <string name="weight">Weight :</string>
+    <string name="demintion">Dimention :</string>
+    <string name="type">Type :</string>
+    <string name="you_get_money">You get</string>
+    <string name="transaction">Transaction</string>
+    <string name="description">description</string>
+    <string name="dimension">Dimention</string>
+    <string name="on_traveling_mode">Sorry, you don\'t have any parcel request</string>
+    <string name="aleart_travelling_mode">On travelling mode to received parcel request </string>
+    <string name="invite"><![CDATA[Tell your friend & earn]]></string>
+    <string name="transaction_id">Order id :</string>
+    <string name="need_help">Need help ?</string>
+
+    <!--    Sinch-->
+    <string name="sinch_incoming_call">Incoming call from %1$s</string>
+
+    <string name="error">Error occurs</string>
+    <string name="no_notification_text">Oop\'s you don\'t have any notification</string>
+    <string name="action_text_notification">Return to home page</string>
+    <string name="internet_connection_error">Opp\'s ! slow or no internet connection \n check internet setting</string>
+    <string name="action_text_no_internet">Try again</string>
+    <string name="no_transaction">Sorry! you don\'t have any transaction :(</string>
+
+    //Push Notification
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="no_item_in_stock">Oop\'s! no parcel on your store.</string>
+    <!--    <string name="traveling_mode_info">Enable "<b>" Travelling mode </b> to carry packets locally and "<b>" earn money."</b>"</string>-->
+    <string name="tips">Tips:\n Enable "<b>" Travelling mode </b> to carry packets locally and "<b>" earn money."</b>" \n 1.By "<b>" Signing up </b> with our apps ,you will be are our "<b> "Business partner</b>.\n 2. By doing partnership you can carry packets locally or any where in India. \n 3. If you carry our packet you get real money.</string>
+    <string name="drop_time">Drop at</string>
+    <string name="pickup_at">Pickup at</string>
+    <string name="contact_page">Feel free to drop us a message !</string>
+    <string name="message">Message</string>
+    <string name="name">Name</string>
+    <string name="postal_address"><![CDATA[Want to reach us the old style ?]]></string>
+    <string name="postal_address_next">Here\'s our <font color='#FF8D00'>postal address</font></string>
+    <string name="postal_address_delhi">DELHI\n 3rd Floor, Plot No. 37, Sector - 14\n Kausambi, Gazaibad, Uttar Pradesh-201010. \n MUMBAI \n 1502,Ambience Court,Plot NO. 2, Sector - 19D,\n
+    Opp.Vashi RTO Office,Vashi,Navi Mumbai- 4007703</string>
+    <string name="terms_short"><![CDATA[T&C]]></string>
+    <!--    <string name="postal_address_next"><![CDATA[Here\'s our \"<font color=\'#EE0000\'>postal address</font>\"]]></string>-->
+
+</resources>
+

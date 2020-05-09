@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".contactus.ContactUs">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/app_bar"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_contact_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/contact_us"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_page"
+        android:textSize="@dimen/mid_text"
+        android:textColor="@color/text_color_light"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:drawableStart="@drawable/account_circle"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_light"
+            android:drawableTint="@color/text_color_light"
+            android:layout_marginStart="5dp"/>
+
+
+        <EditText
+            android:id="@+id/contact_us_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:background="@drawable/grey_round_background"
+            android:paddingStart="10dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/textsms"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_color_light"
+            android:drawableTint="@color/text_color_light"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:id="@+id/contact_us_message"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_round_background"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:hint="Type a message"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_text_background"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="Send"
+            android:textSize="@dimen/mid_text"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:onClick="send"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/postal_address"
+            android:paddingStart="10dp"
+            android:textSize="@dimen/twelvetext"
+            android:gravity="center"
+            android:textColor="@color/text_color_light"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/postal_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/postal_address_next"
+            android:paddingStart="10dp"
+            android:textSize="@dimen/twelvetext"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:textColor="@color/text_color_light"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/address_layout"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/postal_address_delhi"
+                android:gravity="center"
+                android:textSize="@dimen/twelvetext"
+                android:textColor="@color/text_color_light"
+                android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

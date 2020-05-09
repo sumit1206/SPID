@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".store.profile.ProfileWheeler"
+    android:background="@color/white">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:id="@+id/profile_toolbar">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text"
+                        android:text="@string/profile_top"
+                        android:id="@+id/profileName"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/top_section"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_button">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/white"
+                android:layout_gravity="center"
+                android:src="@drawable/male_avater" />
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:text="Shop name"-->
+<!--                    android:textColor="@color/text_color_light"-->
+<!--                    android:padding="2dp"-->
+<!--                    android:textSize="@dimen/large_text"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textStyle="bold" />-->
+            </LinearLayout>
+
+        </RelativeLayout>
+<!--        </LinearLayout>-->
+
+        <include
+            layout="@layout/profile_details_tabs"/>
+    </LinearLayout>
+<!--    </ScrollView>-->
+    </LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".mydelivery.OfflineOtp">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/otp_top_bar">
+        </include>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/security"
+        android:backgroundTint="@color/grey"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/bar_below"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="123456"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/regen_otp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp"
+        android:layout_marginTop="30dp"
+        android:text="Regenerate"
+        android:background="@drawable/round_text_background"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:padding="10dp"
+        android:textSize="@dimen/small_text"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:text="@string/generate_otp"
+        android:layout_marginEnd="@dimen/padding10"
+        android:layout_marginStart="@dimen/text_padding5"
+        android:textSize="@dimen/small_text"
+        android:layout_gravity="bottom"
+        android:lineSpacingExtra="@dimen/text_padding5"
+        android:gravity="bottom"
+        android:background="@color/white"
+        android:padding="@dimen/text_padding5"
+        />
+</LinearLayout>

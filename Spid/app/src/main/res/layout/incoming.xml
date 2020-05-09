@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/avater"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/remoteUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="14dp"
+            android:text="Sample user"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:id="@+id/callState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Incoming call"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            />
+
+    </LinearLayout>
+
+    <!--    <ImageView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:src="@drawable/callbg"-->
+    <!--            android:padding="0dip"-->
+    <!--            android:layout_weight="3"-->
+    <!--            android:contentDescription="Call background">-->
+
+    <!--    </ImageView>-->
+
+    <RelativeLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="bottom|center">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/answerButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_text_background"
+            android:backgroundTint="@color/green_color"
+            android:src="@drawable/call"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/declineButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/round_text_background"
+            android:backgroundTint="@color/red_color"
+            android:src="@drawable/clear"
+            android:drawableTint="@color/white"
+            android:layout_toRightOf="@+id/answerButton"/>
+    </RelativeLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_gravity="bottom">-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="#D0CECE"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Your number stays private"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:textSize="@dimen/large_text"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:drawableStart="@drawable/security"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:drawableTint="@color/colorPrimary"-->
+<!--            android:layout_marginTop="5dp"></TextView>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="@string/security_description"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:gravity="start"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:textSize="@dimen/small_text"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            ></TextView>-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

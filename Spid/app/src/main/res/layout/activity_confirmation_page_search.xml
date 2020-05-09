@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search.ConfirmationPageSearch">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/search_confirm_app_bar"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/from_to_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="@dimen/text_padding5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:orientation="vertical">-->
+<!--                        -->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/location"-->
+<!--                            android:layout_gravity="top"-->
+<!--                            android:backgroundTint="@color/colorPrimary"/>-->
+
+<!--                        <View-->
+<!--                            android:layout_width="2dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:drawableStart="@drawable/circle_step_done"-->
+<!--                            android:background="@drawable/gradient_bg" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/pin_drop_location"-->
+<!--                            android:backgroundTint="@color/colorPrimary"/>-->
+
+<!--                    </LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="@dimen/text_padding5"
+                        android:paddingBottom="@dimen/text_padding5"
+                        android:paddingTop="@dimen/text_padding5">
+
+                        <TextView
+                            android:id="@+id/parcel_from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="from"
+                            android:drawableStart="@drawable/location"
+                            android:drawablePadding="@dimen/text_padding5"
+                            android:drawableTint="@color/icon_color"
+                            android:textSize="@dimen/mid_text"
+                            android:paddingTop="@dimen/text_padding5"
+                            android:paddingBottom="@dimen/text_padding5"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/parcel_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:drawableStart="@drawable/pin_drop_location"
+                            android:drawablePadding="@dimen/text_padding5"
+                            android:drawableTint="@color/icon_color"
+                            android:textSize="@dimen/mid_text"
+                            android:paddingTop="@dimen/text_padding5"
+                            android:paddingBottom="@dimen/text_padding5"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/text_padding5"
+                android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/first_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="@dimen/mid_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Parcel details"
+                        android:background="#F0F0F0"
+                        android:drawableEnd="@drawable/arrow_front"
+                        android:padding="5dp"
+                        android:textColor="@color/text_color_light"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/type"
+                            android:layout_width="match_parent"
+                            android:gravity="start"
+                            android:text="Type"
+                            android:padding="2dp"
+                            android:textSize="@dimen/twelvetext"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/parcel_type"
+                            android:layout_width="match_parent"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:drawableStart="@drawable/type"
+                            android:drawableTint="@color/icon_color"
+                            android:drawablePadding="@dimen/padding10"
+                            android:textColor="@color/text_color_light"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/viewColor"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp">
+
+                        <TextView
+                            android:id="@+id/dimentions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Dimension"
+                            android:gravity="start"
+                            android:padding="2dp" />
+
+                        <TextView
+                            android:id="@+id/parcel_dimension"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="number"
+                            android:gravity="start"
+                            android:padding="@dimen/text_padding5"
+                            android:drawablePadding="@dimen/padding10"
+                            android:drawableStart="@drawable/unit_scale"
+                            android:drawableTint="@color/icon_color"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/viewColor"/>
+
+                        <!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <!--                    <com.google.android.material.textfield.TextInputLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:layout_weight="1">-->
+                        <!--                        <EditText-->
+                        <!--                            android:id="@+id/parcel_width"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:hint="Width"-->
+                        <!--                            android:inputType="number"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:background="@drawable/grey_border"-->
+                        <!--                            android:textColor="@color/black" />-->
+                        <!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <!--                    <com.google.android.material.textfield.TextInputLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:layout_weight="1">-->
+                        <!--                        <EditText-->
+                        <!--                            android:id="@+id/parcel_length"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:hint="Length"-->
+                        <!--                            android:background="@drawable/grey_border"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:inputType="number"-->
+                        <!--                            android:textColor="@color/black" />-->
+                        <!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:orientation="horizontal"-->
+                        <!--                        android:layout_weight="1">-->
+
+                        <!--                        <Spinner-->
+                        <!--                            android:id="@+id/parcel_dimension_unit"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:layout_marginStart="5dp"-->
+                        <!--                            android:layout_marginTop="12dp"-->
+                        <!--                            android:background="@drawable/grey_border"/>-->
+                        <!--                    </LinearLayout>-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <!--                    <com.google.android.material.textfield.TextInputLayout-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_weight="1">-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Weight"
+                            android:padding="2dp"/>
+
+                        <TextView
+                            android:id="@+id/parcel_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:drawablePadding="@dimen/text_padding5"
+                            android:padding="@dimen/text_padding5"
+                            android:drawableStart="@drawable/weight"
+                            android:drawableTint="@color/icon_color"
+                            android:textColor="@color/black"
+                            android:inputType="number"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/viewColor"/>
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/description"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="@color/icon_color"
+                        android:paddingEnd="@dimen/padding10"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="50"
+                        android:layout_marginTop="8dp">
+
+                        <EditText
+                            android:id="@+id/parcel_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:maxLines="1"
+                            android:textSize="@dimen/small_text"
+                            android:background="@null"
+                            android:hint="Description (50 character)" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/viewColor"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/note"
+                            android:backgroundTint="@color/icon_color"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_gravity="center"
+                            android:paddingEnd="@dimen/padding10"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="8dp"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="50">
+                        <EditText
+                            android:id="@+id/parcel_note_for_carrier"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:textSize="@dimen/small_text"
+                            android:hint="Note for carrier (50 character)"
+                            android:maxLines="2"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/viewColor"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:elevation="@dimen/text_padding5">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="@dimen/mid_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/text_padding5"
+                        android:text="Add parcel Image"
+                        android:layout_marginTop="@dimen/small_text"
+                        android:background="#F0F0F0"
+                        android:drawableTint="@color/icon_color"
+                        android:drawablePadding="@dimen/padding10"
+                        android:drawableEnd="@drawable/arrow_front"
+                        android:textColor="@color/text_color_light"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/small_text"
+                        android:paddingBottom="@dimen/small_text">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:id="@+id/first_image"
+                                android:layout_marginStart="@dimen/text_padding5"
+                                android:background="@drawable/grey_border">
+
+                                <ImageView
+                                    android:id="@+id/parcel_image_one"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="fitXY"/>
+
+                                <View
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/add_a_photo"></View>
+                            </FrameLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_marginEnd="@dimen/text_padding5"
+                                android:background="@drawable/grey_border"
+                                android:id="@+id/second_image">
+
+                                <ImageView
+                                    android:id="@+id/parcel_image_two"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="fitXY" />
+
+                                <View
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/add_a_photo"></View>
+                            </FrameLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/second_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <!--        card receiver details-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/text_padding5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Receiver details"
+                            android:textSize="@dimen/mid_text"
+                            android:padding="8dp"
+                            android:drawableEnd="@drawable/arrow_front"
+                            android:background="#F0F0F0"
+                            android:textColor="@color/text_color_light"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/smartphone"
+                            android:backgroundTint="@color/icon_color"
+                            android:layout_gravity="bottom"
+                            android:paddingEnd="@dimen/padding10"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp">
+                            <EditText
+                                android:id="@+id/parcel_receiver_phone_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Phone no"
+                                android:inputType="phone"
+                                android:background="@null"
+                                android:textSize="@dimen/small_text"
+                                android:maxLines="2"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/viewColor"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/account_box"
+                            android:backgroundTint="@color/icon_color"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingEnd="@dimen/padding10"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp">
+                            <EditText
+                                android:id="@+id/parcel_receiver_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Name"
+                                android:textSize="@dimen/small_text"
+                                android:background="@null"
+                                android:inputType="textPersonName"
+                                android:maxLines="2"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/viewColor"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/pin_drop_location"
+                            android:backgroundTint="@color/icon_color"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingEnd="@dimen/padding10"/>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="2dp">
+                            <EditText
+                                android:id="@+id/parcel_receiver_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Address"
+                                android:textSize="@dimen/small_text"
+                                android:background="@null"
+                                android:inputType="textPostalAddress"
+                                android:maxLines="2"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/viewColor"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/city"
+                            android:backgroundTint="@color/icon_color"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingEnd="@dimen/padding10"/>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="@dimen/text_padding5">
+                            <EditText
+                                android:id="@+id/parcel_receiver_pincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Pincode"
+                                android:textSize="@dimen/small_text"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:maxLines="1"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/viewColor"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/text_padding5"
+                    android:layout_marginTop="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textSize="@dimen/mid_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Additional option"
+                            android:background="#F0F0F0"
+                            android:padding="5dp"
+                            android:drawableEnd="@drawable/arrow_front"
+                            android:textColor="@color/text_color_light"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="5dp">
+
+                            <CheckBox
+                                android:id="@+id/parcel_insurance_checkBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/insurance_opt"
+                                android:textColor="@color/text_color_light"
+                                android:textSize="@dimen/small_text"
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/parcel_insurance_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:layout_weight="1"
+                                android:textColor="@color/text_color_light"
+                                android:textSize="@dimen/small_text"
+                                android:layout_gravity="center"
+                                android:gravity="end|center_vertical"
+                                android:layout_marginEnd="5dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/terms"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/small_text"
+                                android:layout_gravity="end"
+                                android:gravity="end|center_vertical"
+                                android:layout_marginEnd="5dp" />
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="3dp">
+
+                            <EditText
+                                android:id="@+id/parcel_value"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Value of parcel"
+                                android:gravity="start"
+                                android:layout_marginEnd="10dp"
+                                android:paddingStart="5dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:inputType="number"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom = "@dimen/padding10"
+                            android:layout_marginStart="5dp">
+
+                            <CheckBox
+                                android:id="@+id/parcel_promocode_checkBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Have a Promocode?"
+                                android:textColor="@color/text_color_light"
+                                android:textSize="@dimen/small_text"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/see_offers_confirm_order"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="See offers"
+                                android:textColor="@color/icon_color"
+                                android:textSize="@dimen/small_text"
+                                android:layout_gravity="center"
+                                android:gravity="end|center_vertical"
+                                android:layout_marginEnd="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_promo_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="5dp"
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp">
+                            <!--                <com.google.android.material.textfield.TextInputLayout-->
+                            <!--                    android:layout_width="match_parent"-->
+                            <!--                    android:layout_height="wrap_content"-->
+                            <!--                    android:layout_weight="1"-->
+                            <!--                    android:background="@null"-->
+                            <!--                    android:layout_marginEnd="5dp"-->
+                            <!--                    android:layout_marginStart="5dp">-->
+
+                            <EditText
+                                android:id="@+id/parcel_promocode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Promo code"
+                                android:gravity="start"
+                                android:background="@null"
+                                android:layout_marginEnd="10dp"
+                                android:paddingStart="5dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"/>
+                            <!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+                            <TextView
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/small_text"
+                                android:id="@+id/bottom_sheet_promocode_apply_buttom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Apply code"
+                                android:textAllCaps="false"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/viewColor"
+                            android:layout_marginStart="@dimen/text_padding5"
+                            android:layout_marginEnd="@dimen/text_padding5"/>
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/mid_text"
+                            android:id="@+id/bottom_sheet_confirm_buttom"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@color/colorPrimary"
+                            android:text="Confirm"
+                            android:textAllCaps="false"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+<!--                        <Button-->
+<!--                            android:background="@drawable/round_text_background"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="@dimen/mid_text"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:id="@+id/bottom_sheet_promocode_apply_buttom"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Apply code"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:elevation="10dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:layout_marginBottom="5dp" />-->
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

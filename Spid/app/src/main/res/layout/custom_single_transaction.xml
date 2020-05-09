@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/transaction_card"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/text_padding5"
+            android:layout_marginStart="@dimen/text_padding5"
+            android:layout_marginTop="@dimen/text_padding5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transaction_id"
+                android:gravity="start"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/small_text"/>
+            <TextView
+                android:id="@+id/wallet_transaction_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345"
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelvetext"/>
+            <TextView
+                android:id="@+id/time_stamp_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="27 sep,19"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="#5F5F5F"
+                android:textSize="@dimen/twelvetext"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/text_padding5"
+            android:layout_marginTop="@dimen/text_padding5">
+
+            <ImageView
+                android:id="@+id/wallet_payment_method"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/paytm_logo"
+                android:layout_marginTop="@dimen/text_padding5"/>
+
+            <TextView
+                android:id="@+id/wallet_add_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Successful"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/text_color_light"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/text_padding5"
+                android:textSize="@dimen/mid_text"/>
+
+            <TextView
+                android:id="@+id/wallet_add_money_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/rupees_symbol"
+                android:gravity="center|end"
+                android:textColor="@color/text_color_light"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="@dimen/text_padding5"
+                android:textSize="@dimen/small_text"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

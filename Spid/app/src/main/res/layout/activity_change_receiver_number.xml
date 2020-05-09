@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mydelivery.ChangeReceiverNumber">
+
+    <include
+        layout="@layout/app_bar"/>
+
+    <EditText
+        android:id="@+id/new_phone_number"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="@dimen/text_padding5"
+        android:layout_marginEnd="@dimen/text_padding5"
+        android:hint="Enter receiver mobile number"
+        android:textColor="@color/text_color_light"
+        android:paddingStart="@dimen/text_padding5"
+        android:paddingEnd="@dimen/text_padding5"
+        android:inputType="phone"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/number_save_button"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/small_text"
+        android:layout_marginTop="@dimen/padding10"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_text_background"
+        android:textColor="@color/white"
+        android:text="save" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/text_color_light"
+        android:lineSpacingExtra="@dimen/padding10"
+        android:layout_marginEnd="@dimen/text_padding5"
+        android:layout_marginStart="@dimen/text_padding5"
+        android:text="@string/change_receiver_number"/>
+</LinearLayout>

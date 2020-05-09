@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.cardview.widget.CardView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/small_text">
+
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What People Says"
+        android:textColor="@color/text_color_light"
+        android:background="@color/light_text_background_color"
+        android:textSize="@dimen/mid_text"
+        android:gravity="center_vertical|start"
+        android:paddingBottom="@dimen/text_padding5"
+        android:paddingTop="@dimen/text_padding5"
+        android:paddingStart="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/people_recyclerView_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/text_padding5"
+        android:background="@color/viewColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/padding10"
+        android:paddingTop="@dimen/text_padding"
+        android:paddingBottom="@dimen/text_padding">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/avater"
+            app:civ_border_width="1dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            app:civ_border_color="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Post your question..."
+        android:layout_marginStart="2dp"
+        android:layout_gravity="center"
+        android:paddingStart="@dimen/small_text"
+        android:layout_weight="1"
+        android:background="@drawable/grey_round_background"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/send"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="@dimen/padding10"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="@dimen/padding10"-->
+<!--        android:background="@color/grey"/>-->
+
+    </LinearLayout>
+<!--    </androidx.cardview.widget.CardView>-->

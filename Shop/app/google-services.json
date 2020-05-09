@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "1018311125506",
+    "firebase_url": "https://spid-94dd3.firebaseio.com",
+    "project_id": "spid-94dd3",
+    "storage_bucket": "spid-94dd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018311125506:android:b391ef8a1a4de6cf3a951b",
+        "android_client_info": {
+          "package_name": "com.example.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018311125506-b32k2vtjjb5int6eq7q8i9lnmgqe27ee.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shop",
+            "certificate_hash": "4598e90031818f02f28aab427a29a2ab2136bebf"
+          }
+        },
+        {
+          "client_id": "1018311125506-407o5pb7o3inprb0aar434ntaraol2oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5SGRGauCYrCy7KuxYIoNoZNe3uUzr7uA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018311125506-407o5pb7o3inprb0aar434ntaraol2oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018311125506:android:512e95e6a7b3f07e",
+        "android_client_info": {
+          "package_name": "com.sumit.spid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018311125506-jvt9lpuhkjeh0b09v7cqg39ls9073nmp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sumit.spid",
+            "certificate_hash": "4598e90031818f02f28aab427a29a2ab2136bebf"
+          }
+        },
+        {
+          "client_id": "1018311125506-9p280g1nmut34at7oiu7qa51khieukbi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sumit.spid",
+            "certificate_hash": "f46ff9c35bb547da7f81fcfaec87a0d14fe8db69"
+          }
+        },
+        {
+          "client_id": "1018311125506-407o5pb7o3inprb0aar434ntaraol2oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5SGRGauCYrCy7KuxYIoNoZNe3uUzr7uA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018311125506-407o5pb7o3inprb0aar434ntaraol2oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

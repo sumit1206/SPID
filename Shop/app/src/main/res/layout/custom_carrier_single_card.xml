@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container_card"
+    android:layout_margin="@dimen/text_padding5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/parcel_image_aggregator"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:background="@drawable/parcel_box">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:layout_marginTop="2dp"
+        android:background="@color/card_background_light"
+        android:paddingBottom="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="2dp"
+        android:layout_marginStart="@dimen/text_padding5">
+
+        <TextView
+            android:id="@+id/parcelIdCarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order id:"
+            android:gravity="center"
+            android:drawableStart="@drawable/description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"/>
+
+        <TextView
+            android:id="@+id/order_id_aggregator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="123456"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"/>
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:layout_marginStart="@dimen/text_padding5"
+            android:layout_marginTop="@dimen/text_padding5">
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:backgroundTint="@color/icon_color"-->
+<!--                android:background="@drawable/subdirectory_arrow_right"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/from_address_aggregator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Howrah"
+                    android:textColor="@color/text_color_light"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="@dimen/small_text"
+                    android:drawableStart="@drawable/location"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/icon_color"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/to_address_aggregator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Delhi"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/small_text"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/pin_drop_location"
+                    android:drawableTint="@color/icon_color"
+                    android:drawablePadding="5dp"
+                    android:padding="@dimen/text_padding"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="@dimen/text_padding5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/parcel_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/text_padding5"
+                android:textColor="@color/text_color_light"
+                android:gravity="center|start"
+                android:drawableStart="@drawable/timeline"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/text_padding5"
+                android:layout_marginEnd="8dp"
+                android:textSize="@dimen/small_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="see more"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center|end"
+            android:layout_gravity="bottom"
+            android:textSize="@dimen/twelvetext"/>
+
+        </LinearLayout>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/grey"/>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="2dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/PickupAtCarrier"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="end"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:text="Click to see more"-->
+<!--            android:paddingBottom="2dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:textColor="#020D47"-->
+<!--            android:textSize="@dimen/small_text"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/dropAtCarrier"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:text="Drop at:"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:drawableStart="@drawable/location"-->
+<!--            android:drawablePadding="5dp"-->
+<!--            android:textSize="@dimen/small_text"/>-->
+
+<!--    </LinearLayout>-->
+</LinearLayout>
+</LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
